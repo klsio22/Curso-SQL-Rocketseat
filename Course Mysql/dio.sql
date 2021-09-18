@@ -52,3 +52,6 @@ ALTER TABLE `persons` CHANGE `Genre` `genre` VARCHAR(1) CHARACTER SET utf8mb4 CO
 RENAME TABLE Persons TO persons;
 ALTER TABLE `persons` CHANGE `ID` `id` INT(11) NOT NULL AUTO_INCREMENT;
 
+/* Como selecionar tabela e submitela a uma condição */
+
+SELECT * FROM CITY WHERE POPULATION > 100000 AND COUNTRYCODE= "USA"
