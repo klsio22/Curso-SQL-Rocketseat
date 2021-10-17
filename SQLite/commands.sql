@@ -97,3 +97,10 @@ WHERE id_department is null;
 SELECT *
 FROM employee
 WHERE id_department is not null;
+
+/*INSERT INTO para inserir dados na tabela  */
+
+INSERT INTO
+  employee (name, cpf, id_department)
+values
+  ("Joana Torres", 96988963642, null)
