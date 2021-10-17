@@ -84,3 +84,16 @@ WHERE registration NOT BETWEEN 4 AND 7;
 SELECT *
 FROM student
 WHERE registration IN (1, 2);
+/* passar os valores dentro do not IN () para pegar todos os valores menos os que
+ estiverem em IN()*/
+SELECT *
+FROM tracks
+WHERE TrackId not IN (800, 1, 10);
+/* is NULL ou is not null para saber se os campos que estão null  */
+SELECT *
+FROM employee
+WHERE id_department is null;
+
+SELECT *
+FROM employee
+WHERE id_department is not null;
